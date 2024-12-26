@@ -1,0 +1,263 @@
+.nav-bar {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 3rem 0px 3rem;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 26rem;
+  display: flex; /* Default display (horizontal) on larger screens */
+  transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition */
+}
+
+.nav-links.active {
+  display: flex;
+  transform: translateY(0); /* Slide down the menu */
+  opacity: 1;
+}
+
+.nav-items {
+  list-style: none;
+}
+
+.nav-items a {
+  text-decoration: none;
+  color: var(--primary-black-color);
+  font-family: "Sora", sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 1),
+      rgba(255, 255, 255, 1)
+    ),
+    linear-gradient(
+      to right,
+      rgba(0, 0, 0, 1),
+      rgba(0, 0, 0, 1),
+      rgba(0, 0, 0, 1)
+    );
+  background-size: 100% 0.1em, 0 0.1em;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
+}
+
+.nav-items a:hover,
+a:focus {
+  background-size: 0 0.1em, 100% 0.1em;
+}
+
+.Resume button {
+  width: 7.8125rem;
+  height: 3rem;
+  border: none;
+  background-color: var(--primary-black-color);
+  color: var(--primary-white-color);
+  font-family: "Sora", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.Resume button:hover {
+  background-color: var(--primary-netural-color);
+  color: var(--primary-white-color);
+}
+
+.Resume hover:active {
+  background-color: var(--primary-white-color);
+  color: var(--primary-black-color);
+  border: 1px solid var(--primary-black-color);
+}
+
+.logo {
+  font-family: "Sora", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.hamburger {
+  display: none; /* Hidden by default */
+  flex-direction: column;
+  cursor: pointer;
+  gap: 0.3rem;
+}
+
+.hamburger .bar {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  border-radius: 5px;
+}
+
+.hamburger .bar.close:nth-child(1) {
+  transform: rotate(50deg) translateY(12px); /* First bar */
+}
+
+.hamburger .bar.close:nth-child(2) {
+  opacity: 0; /* Hide the middle bar */
+}
+
+.hamburger .bar.close:nth-child(3) {
+  transform: rotate(-50deg) translateY(-12px); /* Third bar */
+}
+
+/* For smartphones in portrait mode (320px to 480px) */
+@media (min-width: 320px) and (max-width: 480px) {
+  .logo {
+    font-weight: 400;
+    font-size: 0.8rem;
+  }
+
+  .nav-links {
+    display: none; /* Hidden by default on mobile */
+    position: absolute;
+    top: 64px;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    flex-direction: column;
+    padding: 1rem;
+    opacity: 0;
+    transform: translateY(-100%); /* Start off-screen */
+    border-bottom: 1px solid var(--primary-black-color);
+  }
+
+  /* When the menu is active, make it visible */
+  .nav-links.active {
+    display: flex;
+    opacity: 1;
+    transform: translateY(0); /* Slide the menu down */
+  }
+
+  .nav-items {
+    margin: 1rem 0;
+  }
+
+  .hamburger {
+    display: flex; /* Show hamburger icon */
+  }
+
+  /* When the menu is active, display the nav links */
+  .nav-links.active {
+    display: flex;
+  }
+
+  .Resume button {
+    display: none;
+  }
+
+  .nav-bar {
+    display: flex;
+    justify-content: space-between; /* Space out elements */
+    align-items: center;
+    padding: 0 1rem;
+  }
+}
+
+/* For smartphones and low-resolution tablets in landscape mode (481px to 767px) */
+@media (min-width: 481px) and (max-width: 767px) {
+}
+
+/* For tablets in portrait mode (768px to 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .logo {
+    font-weight: 400;
+    font-size: 0.8rem;
+  }
+
+  .nav-links {
+    display: none; /* Hidden by default on mobile */
+    position: absolute;
+    top: 64px;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    flex-direction: column;
+    padding: 1rem;
+    opacity: 0;
+    transform: translateY(-100%); /* Start off-screen */
+    border-bottom: 1px solid var(--primary-black-color);
+  }
+
+  .nav-bar {
+    position: relative;
+  }
+
+  /* When the menu is active, make it visible */
+  .nav-links.active {
+    display: flex;
+    opacity: 1;
+    transform: translateY(0); /* Slide the menu down */
+  }
+
+  .nav-items {
+    margin: 1rem 0;
+  }
+
+  .hamburger {
+    display: flex; /* Show hamburger icon */
+  }
+
+  /* When the menu is active, display the nav links */
+  .nav-links.active {
+    display: flex;
+  }
+
+  .Resume button {
+    position: absolute;
+    /* background-color: currentColor; Inherits text color */
+    z-index: -1; /* Places it behind the text */
+    mix-blend-mode: difference;
+  }
+
+  .Resume {
+    position: fixed; /* Fix position to screen */
+    bottom: 100px; /* Distance from the bottom */
+    right: 160px; /* Distance from the right */
+    z-index: 1000; /* Make sure it stays above other elements */
+    filter: invert(1);
+  }
+
+  .nav-bar {
+    display: flex;
+    justify-content: space-between; /* Space out elements */
+    align-items: center;
+    padding: 0 1rem;
+  }
+}
+
+/* For tablets in landscape mode (768px to 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+}
+
+/* For standard desktop or laptop screens (1025px to 1280px) */
+@media (min-width: 1025px) and (max-width: 1280px) {
+}
+
+/* For large desktop screens (1281px to 1440px) */
+@media (min-width: 1281px) and (max-width: 1440px) {
+}
+
+/* For wide screen monitors (1281px to 1440px) */
+@media (min-width: 1281px) and (max-width: 1440px) {
+}
+
+/* For Ultra-wide monitors (1441px to 1920px) */
+@media (min-width: 1441px) and (max-width: 1920px) {
+}
+
+/* For 4K screens (1921px and beyond) */
+@media (min-width: 1921px) {
+}

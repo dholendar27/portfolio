@@ -1,0 +1,17 @@
+:root {
+  --primary-black-color: #000000;
+  --primary-netural-color: #404040;
+  --primary-white-color: #FFFFFF;
+  --secondary-black-color: #27272A;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow: auto;
+}

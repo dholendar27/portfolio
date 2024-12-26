@@ -1,0 +1,107 @@
+.aboutme-container {
+  padding: 3rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.info-about-me {
+  font-family: "Sora", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 200;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.3rem;
+}
+
+.aboutme-title {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 2rem;
+  font-family: "Sora", sans-serif;
+  font-weight: 200;
+}
+
+.about-me-svg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.aboutme-title span {
+  font-weight: 600;
+}
+/* For smartphones in portrait mode (320px to 480px) */
+@media (min-width: 320px) and (max-width: 480px) {
+  .aboutme-container {
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 300px; /* 1 column that takes up available space */
+    grid-template-rows: repeat(2, auto);
+    gap: 2rem;
+  }
+
+  .about-me-svg {
+    width: 300px;
+  }
+
+  .about-me-svg img {
+    width: 100%;
+  }
+
+  .info-about-me {
+    font-size: 1rem;
+  }
+}
+
+/* For smartphones and low-resolution tablets in landscape mode (481px to 767px) */
+@media (min-width: 481px) and (max-width: 767px) {
+}
+
+/* For tablets in portrait mode (768px to 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .aboutme-container {
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(
+      2,
+      1fr
+    ); /* 1 column that takes up available space */
+    grid-template-rows: repeat(2, auto);
+    gap: 2rem;
+  }
+
+  .about-me-svg img {
+    width: 100%;
+  }
+
+  .info-about-me {
+    font-size: 0.8rem;
+  }
+}
+
+/* For tablets in landscape mode (768px to 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+}
+
+/* For standard desktop or laptop screens (1025px to 1280px) */
+@media (min-width: 1025px) and (max-width: 1280px) {
+}
+
+/* For large desktop screens (1281px to 1440px) */
+@media (min-width: 1281px) and (max-width: 1440px) {
+}
+
+/* For wide screen monitors (1281px to 1440px) */
+@media (min-width: 1281px) and (max-width: 1440px) {
+}
+
+/* For Ultra-wide monitors (1441px to 1920px) */
+@media (min-width: 1441px) and (max-width: 1920px) {
+}
+
+/* For 4K screens (1921px and beyond) */
+@media (min-width: 1921px) {
+}

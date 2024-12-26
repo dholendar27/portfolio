@@ -1,0 +1,24 @@
+.project-container {
+  width: 100%;
+  background-color: var(--primary-black-color);
+  height: 80vh;
+  padding: 2.5rem;
+}
+
+.project-header {
+  font-family: "Sora", sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  color: var(--primary-white-color);
+}
+
+.project-image {
+  width: 530px;
+  height: 400px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.project-card {
+}

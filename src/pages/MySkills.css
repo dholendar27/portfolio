@@ -1,0 +1,388 @@
+.skills-header {
+  margin-top: 2rem;
+    font-size: 2.5rem;
+    font-family: "Sora", sans-serif;
+    font-weight: 200;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.skills-header span {
+    color: var(--primary-color); /* Customize color as needed */
+    font-weight: 600;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); /* 5 equal columns */
+    gap: 2rem;
+    padding: 3rem 6rem;
+    margin: 0 auto;
+    /* cursor: none; */
+}
+
+.skill {
+    width: 11rem;
+    height: 11rem;
+    border: 1px solid var(--primary-black-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 8px;
+}
+
+.skill i {
+    font-size: 2.5rem;
+    transition: color 0.3s;
+}
+
+.skill span {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--primary-black-color);
+    font-family: "Sora", sans-serif;
+    transition: color 0.3s;
+}
+
+.skill:hover {
+    background-color: var(--primary-black-color);
+}
+
+.skill:hover span,
+.skill:hover i {
+    color: var(--primary-white-color);
+}
+
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+/* For large desktop screens (Windows, macOS, etc.) */
+@media (min-width: 1281px) and (max-width: 1440px) {
+  .skills-container {
+    grid-template-columns: repeat(6, 1fr); /* 6 equal columns for large screens */
+    gap: 2rem;
+  }
+}
+
+/* 
+  ##Device = Ultra-Wide Monitors, 2K Screens
+  ##Screen = B/w 1441px to 1920px
+*/
+/* For Ultra-wide monitors (Windows, macOS, etc.) */
+@media (min-width: 1441px) and (max-width: 1920px) {
+  .skills-container {
+    grid-template-columns: repeat(7, 1fr); /* 7 equal columns for even larger screens */
+    gap: 2.5rem;
+  }
+}
+
+/* 
+  ##Device = Ultra-Wide Monitors, 4K Screens
+  ##Screen = B/w 1921px and beyond
+*/
+/* For 4K screens (Windows, macOS, etc.) */
+@media (min-width: 1921px) {
+  .skills-container {
+    grid-template-columns: repeat(8, 1fr); /* 8 equal columns for 4K screens */
+    gap: 3rem;
+  }
+}
+
+/* 
+  ##Device = Standard Desktops, Laptops
+  ##Screen = B/w 1025px to 1280px
+*/
+/* For standard desktop or laptop screens (Windows, macOS) */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .skills-container {
+    grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+    gap: 2rem;
+  }
+}
+
+/* 
+  ##Device = Tablets, iPads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+/* For tablets in portrait mode (iPad, Android tablets, etc.) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .skills-header {
+    font-size: 2.5rem;
+    font-family: "Sora", sans-serif;
+    font-weight: 200;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.skills-header span {
+    color: var(--primary-color); /* Customize color as needed */
+    font-weight: 600;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); /* 5 equal columns */
+    gap: 2rem;
+    padding: 3rem 6rem;
+    margin: 0 auto;
+    /* cursor: none; */
+}
+
+.skill {
+    width: 11rem;
+    height: 11rem;
+    border: 1px solid var(--primary-black-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 8px;
+}
+
+.skill i {
+    font-size: 2.5rem;
+    transition: color 0.3s;
+}
+
+.skill span {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--primary-black-color);
+    font-family: "Sora", sans-serif;
+    transition: color 0.3s;
+}
+
+.skill:hover {
+    background-color: var(--primary-black-color);
+}
+
+.skill:hover span,
+.skill:hover i {
+    color: var(--primary-white-color);
+}
+
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+/* For large desktop screens (Windows, macOS, etc.) */
+@media (min-width: 1281px) and (max-width: 1440px) {
+  .skills-container {
+    grid-template-columns: repeat(6, 1fr); /* 6 equal columns for large screens */
+    gap: 2rem;
+  }
+}
+
+/* 
+  ##Device = Ultra-Wide Monitors, 2K Screens
+  ##Screen = B/w 1441px to 1920px
+*/
+/* For Ultra-wide monitors (Windows, macOS, etc.) */
+@media (min-width: 1441px) and (max-width: 1920px) {
+  .skills-container {
+    grid-template-columns: repeat(7, 1fr); /* 7 equal columns for even larger screens */
+    gap: 2.5rem;
+  }
+}
+
+/* 
+  ##Device = Ultra-Wide Monitors, 4K Screens
+  ##Screen = B/w 1921px and beyond
+*/
+/* For 4K screens (Windows, macOS, etc.) */
+@media (min-width: 1921px) {
+  .skills-container {
+    grid-template-columns: repeat(8, 1fr); /* 8 equal columns for 4K screens */
+    gap: 3rem;
+  }
+}
+
+/* 
+  ##Device = Standard Desktops, Laptops
+  ##Screen = B/w 1025px to 1280px
+*/
+/* For standard desktop or laptop screens (Windows, macOS) */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .skills-container {
+    grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+    gap: 2rem;
+  }
+}
+
+/* 
+  ##Device = Tablets, iPads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+/* For tablets in portrait mode (iPad, Android tablets, etc.) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .skills-container {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    padding: 1rem 1.5rem;
+    margin: 0 auto;
+  }
+}
+
+/* 
+  ##Device = Tablets, iPads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+/* For tablets in landscape mode */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .skills-container {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    padding: 1rem 1.5rem;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .skills-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 equal columns */
+    gap: 1rem;
+    padding: 1rem 1.5rem;
+    margin: 0 auto;
+  }
+
+  .skill {
+    width: 9rem;
+    height: 9rem;
+  }
+
+  .skill i {
+    font-size: 2rem;
+  }
+
+  .skill span {
+    margin-top: 1rem;
+    font-size: 1rem;
+  }
+}
+
+/* 
+  ##Device = Large Windows/Mac Monitors 
+  ##Screen = B/w 1281px to 1440px
+*/
+/* Specific for wide screen monitors (MacOS/Windows) */
+@media (min-width: 1281px) and (max-width: 1440px) {
+  .skills-container {
+    grid-template-columns: repeat(6, 1fr);
+    gap: 2rem;
+  }
+}
+
+/* 
+  ##Device = Small desktop resolution (macOS / Windows desktops)
+  ##Screen = 1025px to 1280px 
+*/
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .skills-container {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+  }
+}
+}
+
+/* 
+  ##Device = Tablets, iPads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+/* For tablets in landscape mode */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .skills-container {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    padding: 1rem 1.5rem;
+    margin: 0 auto;
+  }
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+/* For smartphones and low-resolution tablets in landscape mode (Windows Mobile, Android phones, iPhone, etc.) */
+@media (min-width: 481px) and (max-width: 767px) {
+  .skills-container {
+    grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+    gap: 1rem;
+    padding: 1rem 0rem 1rem 1rem;
+    margin: 0 auto;
+  }
+
+  .skill {
+    width: 10rem;
+    height: 10rem;
+  }
+
+  .skill i {
+    font-size: 2rem;
+  }
+
+  .skill span {
+    margin-top: 1rem;
+    font-size: 1rem;
+  }
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+/* For smartphones in portrait mode (iPhone, Android, etc.) */
+@media (min-width: 320px) and (max-width: 480px) {
+  .skills-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 equal columns */
+    gap: 1rem;
+    padding: 1rem 1.5rem;
+    margin: 0 auto;
+  }
+
+  .skill {
+    width: 9rem;
+    height: 9rem;
+  }
+
+  .skill i {
+    font-size: 2rem;
+  }
+
+  .skill span {
+    margin-top: 1rem;
+    font-size: 1rem;
+  }
+}
+
+/* 
+  ##Device = Large Windows/Mac Monitors 
+  ##Screen = B/w 1281px to 1440px
+*/
+/* Specific for wide screen monitors (MacOS/Windows) */
+@media (min-width: 1281px) and (max-width: 1440px) {
+  .skills-container {
+    grid-template-columns: repeat(6, 1fr);
+    gap: 2rem;
+  }
+}
+
+/* 
+  ##Device = Small desktop resolution (macOS / Windows desktops)
+  ##Screen = 1025px to 1280px 
+*/
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .skills-container {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+  }
+}
