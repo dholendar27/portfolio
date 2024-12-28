@@ -41,6 +41,8 @@
     grid-template-columns: 300px; /* 1 column that takes up available space */
     grid-template-rows: repeat(2, auto);
     gap: 2rem;
+    align-items: center;
+    justify-content: center;
   }
 
   .about-me-svg {

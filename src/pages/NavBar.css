@@ -153,9 +153,13 @@ a:focus {
   .nav-links.active {
     display: flex;
   }
-
-  .Resume button {
+  .Resume button p {
     display: none;
+  }
+  .Resume button {
+    width: 3rem;
+    height: 3rem;
+    border: none;
   }
 
   .nav-bar {

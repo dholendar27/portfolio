@@ -12,13 +12,13 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 1200px;
+    max-width: 90%;
     width: 100%;
 }
 
 .about-me-text {
     flex: 1;
-    max-width: 600px;
+    max-width: 100%;
 }
 
 .greeting-text {
@@ -34,18 +34,13 @@
 
 .position {
     font-weight: bold;
+    font-family: "Sora", sans-serif;
 }
 
-.developer {
-    font-weight: bold;
-    background: #fff;
-    border: 3px solid #000;
-    padding: 0 5px;
-    display: inline-block;
-    border-radius: 5px;
-}
+
 
 .intro-text {
+    font-family: "Sora", sans-serif;
     font-size: 1rem;
     color: #555;
     line-height: 1.6;
@@ -85,9 +80,30 @@
     justify-content: center;
 }
 
+
 /* For smartphones in portrait mode (320px to 480px) */
 @media (min-width: 320px) and (max-width: 480px) {
+    .about-me-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+       
+    }
 
+    .about-me-illustration svg {
+        margin-top: 2rem;
+        width: 100%;
+       
+    }
+
+    .developer {
+        font-family: 'sora',sans-serif;
+        font-weight: bold;
+        color: black;
+    }
+    
     
 }
 
@@ -101,17 +117,81 @@
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {}
 
 /* For standard desktop or laptop screens (1025px to 1280px) */
-@media (min-width: 1025px) and (max-width: 1280px) {}
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+    .developer {
+        font-family: sans-serif;
+        font-weight: bold;
+        background: #fff;
+        padding: 0 5px;
+        display: inline-block;
+        border-radius: 5px;
+        color: black; /* Fallback color */
+        -webkit-text-fill-color: transparent; /* For text gradient */
+        -webkit-text-stroke: 2px black; /* Stroke effect */
+    }
+}
 
 /* For large desktop screens (1281px to 1440px) */
-@media (min-width: 1281px) and (max-width: 1440px) {}
+@media (min-width: 1281px) and (max-width: 1440px) {
+
+    .developer {
+        font-family: sans-serif;
+        font-weight: bold;
+        background: #fff;
+        padding: 0 5px;
+        display: inline-block;
+        border-radius: 5px;
+        color: black; /* Fallback color */
+        -webkit-text-fill-color: transparent; /* For text gradient */
+        -webkit-text-stroke: 2px black; /* Stroke effect */
+    }
+}
 
 /* For wide screen monitors (1281px to 1440px) */
-@media (min-width: 1281px) and (max-width: 1440px) {}
+@media (min-width: 1281px) and (max-width: 1440px) {
+
+    .developer {
+        font-family: sans-serif;
+        font-weight: bold;
+        background: #fff;
+        padding: 0 5px;
+        display: inline-block;
+        border-radius: 5px;
+        color: black; /* Fallback color */
+        -webkit-text-fill-color: transparent; /* For text gradient */
+        -webkit-text-stroke: 2px black; /* Stroke effect */
+    }
+}
 
 /* For Ultra-wide monitors (1441px to 1920px) */
-@media (min-width: 1441px) and (max-width: 1920px) {}
+@media (min-width: 1441px) and (max-width: 1920px) {
+
+    .developer {
+        font-family: sans-serif;
+        font-weight: bold;
+        background: #fff;
+        padding: 0 5px;
+        display: inline-block;
+        border-radius: 5px;
+        color: black; /* Fallback color */
+        -webkit-text-fill-color: transparent; /* For text gradient */
+        -webkit-text-stroke: 2px black; /* Stroke effect */
+    }
+}
 
 /* For 4K screens (1921px and beyond) */
-@media (min-width: 1921px) {}
+@media (min-width: 1921px) {
+    .developer {
+        font-family: sans-serif;
+        font-weight: bold;
+        background: #fff;
+        padding: 0 5px;
+        display: inline-block;
+        border-radius: 5px;
+        color: black; /* Fallback color */
+        -webkit-text-fill-color: transparent; /* For text gradient */
+        -webkit-text-stroke: 2px black; /* Stroke effect */
+    }
+}
 

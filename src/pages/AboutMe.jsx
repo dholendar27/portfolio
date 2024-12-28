@@ -4,14 +4,14 @@ import "./AboutMe.css";
 export default function AboutMe() {
   return (
     <Fragment>
-      <h4 className="aboutme-title">
+      <h4 className="aboutme-title" id="aboutme">
         About <span>Me</span>
       </h4>
       <div className="aboutme-container">
         <div className="about-me-svg">
           <img src="src/assets/aboutme.jpg" />
         </div>
-        <div class="info-about-me">
+        <div className="info-about-me">
           <div>
             I'm a passionate, self-taught Python developer with a strong focus
             on building dynamic web applications. With expertise in frameworks
@@ -22,8 +22,7 @@ export default function AboutMe() {
           <div>
             I began my development journey in 2022 and have steadily evolved as
             a developer by embracing new challenges and constantly learning.
-            Now, in my early thirties, I'm focused on building scalable and
-            high-performance web applications using modern tools and
+            Now, I'm focused on building scalable and high-performance web applications using modern tools and
             technologies such as Python, Django, Flask, React, TypeScript, and
             more.
           </div>

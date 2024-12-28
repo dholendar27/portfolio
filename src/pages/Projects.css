@@ -1,7 +1,6 @@
 .project-container {
   width: 100%;
   background-color: var(--primary-black-color);
-  height: 80vh;
   padding: 2.5rem;
 }
 
@@ -11,14 +10,123 @@
   font-weight: 600;
   text-align: center;
   color: var(--primary-white-color);
+  margin-bottom: 2rem;
 }
 
 .project-image {
-  width: 530px;
+  width: 90%;
   height: 400px;
   background-color: white;
   border-radius: 10px;
 }
 
-.project-card {
+.project-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
 }
+
+.project-card {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  margin-bottom: 3rem;
+}
+
+.project-card:nth-child(2n+1) {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  margin-bottom: 3rem;
+  grid-auto-flow: dense;
+  direction: rtl;
+}
+
+
+.project-info {
+  color:#ffffff;
+  font-family: "Sora", sans-serif;
+  margin: auto 0;
+  text-align: left;
+}
+
+.project-info h3 {
+  font-size: 3.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.project-title {
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: "Sora", sans-serif;
+}
+
+.project-description {
+  margin: 1.5rem 0;
+  font-family: "Sora", sans-serif;
+  color: #71717A;
+}
+
+/* For smartphones in portrait mode (320px to 480px) */
+@media (min-width: 320px) and (max-width: 480px) {
+  .project-card {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 3rem;
+  }
+  
+  .project-card:nth-child(2n+1) {
+    display: grid;
+    grid-template-columns: 1fr;
+    direction: ltr;
+  }
+
+  .project-image {
+    width: 100%;
+    height: 400px;
+    background-color: white;
+    border-radius: 10px;
+  }
+
+  .project-image img {
+    width: 100%;
+    height: 100%;
+    background-repeat: repeat;
+  }
+
+  .project-container {
+    padding: 1.2rem;
+  }
+}
+
+/* For smartphones and low-resolution tablets in landscape mode (481px to 767px) */
+@media (min-width: 481px) and (max-width: 767px) {
+}
+
+/* For tablets in portrait mode (768px to 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+}
+
+/* For tablets in landscape mode (768px to 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+}
+
+/* For standard desktop or laptop screens (1025px to 1280px) */
+@media (min-width: 1025px) and (max-width: 1280px) {
+}
+
+/* For large desktop screens (1281px to 1440px) */
+@media (min-width: 1281px) and (max-width: 1440px) {
+}
+
+/* For wide screen monitors (1281px to 1440px) */
+@media (min-width: 1281px) and (max-width: 1440px) {
+}
+
+/* For Ultra-wide monitors (1441px to 1920px) */
+@media (min-width: 1441px) and (max-width: 1920px) {
+}
+
+/* For 4K screens (1921px and beyond) */
+@media (min-width: 1921px) {
+}
+

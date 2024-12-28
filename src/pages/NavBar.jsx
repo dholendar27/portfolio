@@ -1,4 +1,4 @@
-import { Fragment, useState } from "react";
+import React, { Fragment, useState } from "react";
 import { ReactComponent as DownloadIcon } from "../assets/download.svg";
 import "./NavBar.css"
 
@@ -21,15 +21,15 @@ export default function NavBar() {
 
                     <div className="nav-menu">
                         <ul className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
-                            <li className="nav-items"><a href="#">About Me</a></li>
+                            <li className="nav-items"><a href="#aboutme">About Me</a></li>
                             <li className="nav-items"><a href="#skills">Skills</a></li>
                             <li className="nav-items"><a href="#experience">Experience</a></li>
-                            <li className="nav-items"><a href="#">Project</a></li>
+                            <li className="nav-items"><a href="#projects">Project</a></li>
                         </ul>
                     </div>
 
                     <div className="Resume">
-                        <button>Resume <DownloadIcon /></button>
+                        <button><p>Resume </p> <DownloadIcon /></button>
                     </div>
 
                     {/* Hamburger Icon */}
